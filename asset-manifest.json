@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/react-test-2/static/css/main.54961966.css",
-    "main.js": "/react-test-2/static/js/main.d4b54190.js",
+    "main.css": "/react-test-2/static/css/main.e0e24d0e.css",
+    "main.js": "/react-test-2/static/js/main.c67f40ce.js",
     "static/media/wheat_main.png": "/react-test-2/static/media/wheat_main.f05121c0795ad33a4086.png",
     "static/media/formEmail__image.png": "/react-test-2/static/media/formEmail__image.58b063f8a438a091a76a.png",
+    "static/media/main_image_adaptive.png": "/react-test-2/static/media/main_image_adaptive.b487859b0dc1f6bc0bc4.png",
     "static/media/1758.ttf": "/react-test-2/static/media/1758.764ba13de4409a990823.ttf",
     "static/media/gothampro.ttf": "/react-test-2/static/media/gothampro.4f71921a0823129cd8ba.ttf",
     "static/media/logo.png": "/react-test-2/static/media/logo.94526815d8adbffa71ae.png",
@@ -12,11 +13,11 @@
     "static/media/guys_green.svg": "/react-test-2/static/media/guys_green.4b82c0b1e3555be98105.svg",
     "index.html": "/react-test-2/index.html",
     "static/media/elipse.svg": "/react-test-2/static/media/elipse.30e164faeaabb445d029.svg",
-    "main.54961966.css.map": "/react-test-2/static/css/main.54961966.css.map",
-    "main.d4b54190.js.map": "/react-test-2/static/js/main.d4b54190.js.map"
+    "main.e0e24d0e.css.map": "/react-test-2/static/css/main.e0e24d0e.css.map",
+    "main.c67f40ce.js.map": "/react-test-2/static/js/main.c67f40ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.54961966.css",
-    "static/js/main.d4b54190.js"
+    "static/css/main.e0e24d0e.css",
+    "static/js/main.c67f40ce.js"
   ]
 }
