@@ -2,7 +2,7 @@
   "name": "project2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/justDnK.github.io/react-test-2",
+  "homepage": "https://justDnK.github.io/react-test-2",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
