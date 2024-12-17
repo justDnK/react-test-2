@@ -1,0 +1,757 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/gothampro.ttf);
+}
+
+@font-face {
+    font-family: "Gotham Bold";
+    src: url(../fonts/1758.ttf);
+}
+
+.container {
+    width: 100%;
+    // background-color: rgb(243, 8, 215);
+
+    .header {
+        margin-bottom: 13px;
+        // background-color: rgb(35, 204, 108);
+        width: 100%;
+        height: 185px;
+        display: flex;
+        justify-content: space-between;
+
+      
+        .logo {
+            width: 54px;
+            height: 59px;
+            // background-color: red;
+            margin-top: 51px;
+            margin-left: 7%;
+            background-image: url(../images/logo.png);
+            background-size: cover;
+        }
+
+        .menu {
+            width: 664px; //664
+            height: 44px;
+            margin-top: 60px;
+            margin-right: 7%;
+
+            a {
+                color: #162E36;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration: none;
+                font-family: "Gotham";
+                margin-right: 38.4px;
+            }
+
+            button {
+                font-family: Arial, Helvetica, sans-serif;
+                width: 208px;
+                height: 44px;
+                background-color: #289225;
+                color: white;
+                border: none;
+                font-size: 15px;
+            }
+        }
+
+        .burgerMenu {
+            display: none;
+            #menu__toggle {
+                opacity: 0;
+            }
+    
+            .menu__btn {
+                display: flex;
+                align-items: center;
+                position: relative;
+    
+                width: 26px;
+                height: 26px;
+    
+                cursor: pointer;
+                z-index: 1;
+            }
+    
+            .menu__btn > span,
+            .menu__btn > span::before,
+            .menu__btn > span::after {
+                display: block;
+                position: absolute;
+    
+                width: 100%;
+                height: 3.2px;
+    
+                background: #289225;
+            }
+    
+            .menu__btn > span::before {
+                content: "";
+                top: -8px;
+            }
+    
+            .menu__btn > span::after {
+                content: "";
+                top: 8px;
+            }
+    
+            // style for menu
+    
+            .menu__box {
+                display: block;
+                position: fixed;
+                visibility: hidden;
+                top: 0;
+                left: -100%;
+                width:100%;
+                height: 100%;
+                margin: 0;
+                padding: 50.4px 0;
+                list-style: none;
+                text-align: left;
+                background-color: white;
+                box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    
+                .menu__item {
+                    display: block;
+                    padding: 16px 24px;
+                    color: #333;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 28px;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+    
+                .menu__item:hover {
+                    background-color: #CFD8DC;
+                }
+    
+                .logo2 {
+                    width: 35px;
+                    height: 38px;
+
+                    margin: 0px 24px;
+                    background-image: url(../images/Frame\ 41.svg);
+                    background-size: cover;
+                    margin-bottom: 38px;
+                }
+            }
+    
+            #menu__toggle:checked ~ .menu__btn > span {
+                transform: rotate(45deg);
+              }
+              #menu__toggle:checked ~ .menu__btn > span::before {
+                top: 0;
+                transform: rotate(0);
+              }
+              #menu__toggle:checked ~ .menu__btn > span::after {
+                top: 0;
+                transform: rotate(90deg);
+              }
+              #menu__toggle:checked ~ .menu__box {
+                visibility: visible;
+                left: 0;
+              }
+    
+              .menu__btn > span,
+              .menu__btn > span::before,
+              .menu__btn > span::after {
+                transition-duration: .25s;
+               }
+              .menu__box {
+               transition-duration: .25s;
+               }
+               .menu__item {
+                transition-duration: .25s;
+               }
+
+               .menu__contacts {
+                p {
+                    color: var(--green, #289225);
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding: 0px 24px;
+                    margin-top: 51px;
+                }
+
+                .menu__textContacts {
+                    margin-top: 25px;
+                }
+                
+               }
+        }
+    }
+
+    .main {
+        width: 100%;
+        height: 679px;
+        // background-color: aqua;
+        display: flex;
+        // justify-content: right;
+
+
+        .main__image {
+            // width: 948px;
+            width: 62%;
+            height: 679px;
+            background-image: url(../images/wheat_main.png);
+            background-size: cover;
+            margin-left: 38%;
+        }
+
+        .main__none {
+            display: none;
+        }
+
+        .main__textes {
+            width: 825px;
+            width: 54%;
+            height: 377px;
+            // background-color: rgb(227, 138, 138);
+            position: absolute;
+            margin-left: 7%;
+            margin-top: 3.5%;
+
+            .main__text-1 {
+                color: var(--green, #289225);
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 28.8px */
+                font-size: 15px;
+                font-family: "Gotham";
+                margin-bottom: 5px;
+            }
+
+            .main__text-2 {
+                color: var(--black, #162E36);
+                font-family: sans-serif;
+                font-size: 50.5px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 140%; /* 91px */
+                text-transform: uppercase;
+                font-family: "Gotham Bold";
+                margin: 0;
+                margin-bottom: 24px;
+                letter-spacing: 0px;
+            }
+
+            .main__text-3 {
+                width: 448px;
+                color: var(--black, #162E36);
+                font-family: "Gotham";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 32px */
+                margin-bottom: 30px;
+            }
+
+            .main__btn {
+                width: 208px;
+                height: 44px;
+                background-color: white;
+                color: #289225;
+                border: none;
+                border: 1px solid #289225;
+            }
+        }
+
+    }
+
+    .box-1 {
+        height: 369px;
+        width: 86%;
+        // background-color: rgb(80, 80, 180);
+        margin-left: 7%;
+        margin-top: 51px;
+        margin-bottom: 102.4px;
+        display: flex;
+        flex-direction: column;
+
+        .box-1__textes {
+            width: 100%;
+            height: 234px;
+            // background-color: green;
+            margin-bottom: 71px;
+            display: flex;
+            justify-content: space-between;
+
+            .box-1__text-1 {
+                height: 130px;
+                width: 713px;
+                // background-color: yellow;
+
+                p {
+                    color: var(--green, #289225);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 28.8px */
+                    font-size: 15px;
+                    font-family: "Gotham";
+                    margin-bottom: 5px;
+                }
+
+                h2 {
+                    color: var(--black, #162E36);
+                    font-family: "Gotham";
+                    font-size: 38.4px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 140%;
+
+                    span {
+                        color: var(--green, #289225);
+                    }
+                }
+            }
+
+            .box-1__text-2 {
+                height: 234px;
+                width: 448px;
+                // background-color: aqua;
+
+                .text-1 {
+                    color: var(--black, #162E36);
+                    font-family: "Gotham";
+                    font-size: 14.3px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 28.8px */
+                    margin-bottom: 25.6px;
+                }
+
+                .text-2 {
+                    color: var(--black, #162E36);
+                    font-family: "Gotham";
+                    font-size: 14.3px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 28.8px */
+                    margin-bottom: 25.6px;
+                }
+
+                button {
+                    font-family: Arial, Helvetica, sans-serif;
+                    width: 208px;
+                    height: 44px;
+                    background-color: #289225;
+                    color: white;
+                    border: none;
+                    font-size: 14.4px;
+                }
+            }
+        }
+
+        .box-1__numbers {
+            width: 100%;
+            height: 64px;
+            // background-color: pink;
+            display: flex;
+            justify-content: space-between;
+
+            .box-1__infoNumber {
+                height: 64px;
+                width: 208px;
+                // background-color: rgb(237, 117, 213);
+
+                h2 {
+                    color: var(--green, #289225);
+                    font-family: "Gotham";
+                    font-size: 37px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 100%; /* 63px */
+                }
+
+                p {
+                    color: var(--black, #162E36);
+                    font-family: "Gotham";
+                    font-size: 14.3px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 0%; /* 28.8px */
+                    margin-top: 16px;
+                    
+                }
+            }
+        }
+    }
+
+    .box-2 {
+        width: 86%;
+        margin-left: 7%;
+        height: 506.4px;
+        // background-color: pink;
+        margin-bottom: 102.4px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+
+        .box-2__textes {
+            height: 185.6px;
+            width: 327.2px;
+            // background-color: rgb(147, 147, 223);
+
+            .box-2__text-1 {
+                color: var(--green, #289225);
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 28.8px */
+                font-size: 15px;
+                font-family: "Gotham";
+                margin-bottom: 5px;
+                text-align: right;
+                margin-bottom: 6.4px;
+            }
+
+            .box-2__text-2 {
+                color: var(--black, #162E36);
+                font-family: "Gotham";
+                font-size: 38.4px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 140%;
+                text-align: right;
+                margin-bottom: 28px;
+
+                span {
+                    color: var(--green, #289225);
+                }
+            }
+
+            .box-2__text-3 {
+                color: var(--black, #162E36);
+                font-family: "Gotham";
+                font-size: 14.3px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 28.8px */
+                text-align: right;
+            }
+
+
+        }
+
+        .box-2__info {
+            height: 269.6px;
+            width: 100%;
+            // background-color: rgb(26, 104, 26);
+            display: flex;
+            justify-content: space-between;
+
+            .box-2__blockInfo {
+                width: 336px;
+                height: 269.6px;
+                border-radius: 9.6px 0px;
+                background: #F9F9F9;
+                box-shadow: 0px 9.6px 28px 0px rgba(0, 0, 0, 0.05);
+
+
+                .box-2__image {
+                    width: 43.2px;
+                    height: 30.4px;
+                    background-image: url(../images/guys_green.svg);
+                    background-size: cover;
+                    margin-top: 25.6px;
+                    margin-left: 25.6px;
+                }
+
+                h3 {
+                    color: var(--black, #162E36);
+                    font-family: "Gotham";
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    margin-top: 20px;
+                    margin-left: 25.6px;
+                }
+
+                p {
+                    width: 266.4px;
+                    color: var(--black, #162E36);
+                    font-family: "Gotham";
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 136%; /* 20.4px */
+                    margin-top: 12.8px;
+                    margin-left: 25.6px;
+                }
+
+                .box-2__elipse {
+                    width: 38.4px;
+                    height: 38.4px;
+                    background-image: url(../images/elipse.svg);
+                    background-size: cover;
+                    border-radius: 30%;
+                    margin-top: 17.6px;
+                    margin-left: 25.6px;
+                }
+            }
+        }
+    }
+
+    .formEmail {
+        width: 100%;
+        height: 577px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 87.2px;
+
+        .formEmail__form {
+            // width: 486.4px;
+            width: 31.6%;
+            height: 577px;
+            // background-color: pink;
+            margin-left: 7%;
+
+            .formEmail__text {
+                height: 176.8px;
+                width: 100%;
+                margin-bottom: 64px;
+
+                .formEmail__text-1 {
+                    color: var(--green, #289225);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 28.8px */
+                    font-size: 15px;
+                    font-family: "Gotham";
+                    margin-bottom: 5px;
+                    margin-bottom: 6.4px;
+                }
+
+                .formEmail__text-2 {
+                    color: var(--black, #162E36);
+                    font-family: "Gotham";
+                    font-size: 38.4px;
+                    font-style: normal;
+                    font-weight: 600;
+                    margin-bottom: 25px;
+                    margin-top: 0;
+                    padding: 0;
+                    height: 42px;
+
+                    span {
+                        color: var(--green, #289225);
+                    }
+                }
+
+                .formEmail__text-3 {
+                    color: var(--black, #162E36);
+                    font-family: "Gotham";
+                    font-size: 14.3px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 28.8px */
+                    width: 327.2px;
+                }
+            }
+
+            .formEmail__contacts {
+                height: 168px;
+                width: 425px;
+                // background-color: rgb(224, 224, 246);
+
+                .formEmail__name {
+                    width: 190px;
+                    margin-right: 24px;
+                    border: none;
+                    background: none;
+                    font-size: 16px;
+                    border-bottom: 1px solid #CBCBCB;
+                    padding: 5px;
+                    font-family: "Gotham";
+                    color: #CBCBCB
+                }
+
+                .formEmail__telephone {
+                    width: 190px;
+                    width: 190px;
+                    border: none;
+                    background: none;
+                    font-size: 16px;
+                    border-bottom: 1px solid #CBCBCB;
+                    padding: 5px;
+                    font-family: "Gotham";
+                    color: #CBCBCB;
+                }
+
+                .formEmail__options {
+                    width: 100%;
+                    margin-top: 34.4px;
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid #CBCBCB;
+                    padding: 5px;
+                    font-size: 16px;
+                    font-family: "Gotham";
+                    color: #6e6e6e;
+                    margin-bottom: 36px;
+                }
+
+                button {
+                    font-family: Arial, Helvetica, sans-serif;
+                    width: 208px;
+                    height: 44px;
+                    background-color: #289225;
+                    color: white;
+                    border: none;
+                    font-size: 15px;
+                }
+
+                p {
+                    color: var(--green, #289225);
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .formEmail__adressEmail {
+                    margin-top: 93.6px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        .formEmail__image {
+            // width: 850.4px;
+            width: 55.4%;
+            height: 577px;
+            background-image: url(../images/formEmail__image.png);
+            background-size: cover;
+
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: 59.3px;
+        // background-color: rgb(104, 205, 205);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 37.6px;
+
+        .footer__logo {
+            height: 59.3px;
+            width: 53.6px;
+            background-image: url(../images/logo.png);
+            background-size: cover;
+            margin-left: 7%;
+        }
+
+        .footer__menu {
+            width: 417.6px;
+            height: 59.3px;
+            // background-color: rgb(243, 133, 9);
+            margin-left: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                color: #162E36;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration: none;
+                font-family: "Gotham";
+            }
+        }
+
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 208px;
+            height: 44px;
+            background-color: #289225;
+            color: white;
+            border: none;
+            font-size: 15px;
+            margin-right: 7%;
+        }
+    }
+
+    .sparkStudio {
+        width: 149.6px;
+        height: 48.8px;
+        background-image: url(../images/spark_logo.svg);
+        background-size: cover;
+        margin: 0 auto 28.8px auto;
+    }
+
+}
+@media(max-width: 1175px) {
+    .container {
+        .main {
+            height: 590px;
+            .main__image {
+                height: 590px;
+            }
+
+            .main__textes {
+    
+                .main__text-1 {
+                    font-size: 15px;
+                    margin-bottom: 2px;
+                }
+    
+                .main__text-2 {
+                    font-size: 37px;
+                    margin-bottom: 19px;
+                }
+    
+                .main__text-3 {
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .container {
+        .header {
+            height: 128px;
+            .logo {
+                width: 35px;
+                height: 38px;
+
+                margin: 0px 24px;
+                background-image: url(../images/Frame\ 41.svg);
+                background-size: cover;
+                margin-bottom: 38px;
+                margin-top: 50.4px;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .burgerMenu {
+                display: flex;
+                margin-right: 7%;
+                margin-top: 57.6px;
+            }
+        }
+    }
+}
