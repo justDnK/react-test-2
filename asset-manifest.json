@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-test-2/static/css/main.d3260510.css",
-    "main.js": "/react-test-2/static/js/main.c67f40ce.js",
+    "main.css": "/react-test-2/static/css/main.c36bdd88.css",
+    "main.js": "/react-test-2/static/js/main.5da0d82b.js",
     "static/media/wheat_main.png": "/react-test-2/static/media/wheat_main.f05121c0795ad33a4086.png",
     "static/media/formEmail__image.png": "/react-test-2/static/media/formEmail__image.58b063f8a438a091a76a.png",
     "static/media/main_image_adaptive.png": "/react-test-2/static/media/main_image_adaptive.b487859b0dc1f6bc0bc4.png",
@@ -13,11 +13,11 @@
     "static/media/guys_green.svg": "/react-test-2/static/media/guys_green.4b82c0b1e3555be98105.svg",
     "index.html": "/react-test-2/index.html",
     "static/media/elipse.svg": "/react-test-2/static/media/elipse.30e164faeaabb445d029.svg",
-    "main.d3260510.css.map": "/react-test-2/static/css/main.d3260510.css.map",
-    "main.c67f40ce.js.map": "/react-test-2/static/js/main.c67f40ce.js.map"
+    "main.c36bdd88.css.map": "/react-test-2/static/css/main.c36bdd88.css.map",
+    "main.5da0d82b.js.map": "/react-test-2/static/js/main.5da0d82b.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3260510.css",
-    "static/js/main.c67f40ce.js"
+    "static/css/main.c36bdd88.css",
+    "static/js/main.5da0d82b.js"
   ]
 }
