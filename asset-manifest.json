@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-test-2/static/css/main.d0c31fcc.css",
+    "main.css": "/react-test-2/static/css/main.8fb44d0e.css",
     "main.js": "/react-test-2/static/js/main.d430c355.js",
     "static/media/wheat_main.png": "/react-test-2/static/media/wheat_main.f05121c0795ad33a4086.png",
     "static/media/formEmail__image.png": "/react-test-2/static/media/formEmail__image.58b063f8a438a091a76a.png",
@@ -18,11 +18,11 @@
     "index.html": "/react-test-2/index.html",
     "static/media/elipse.svg": "/react-test-2/static/media/elipse.30e164faeaabb445d029.svg",
     "static/media/elipse_white.svg": "/react-test-2/static/media/elipse_white.8a235fa2509f0f3a64d6.svg",
-    "main.d0c31fcc.css.map": "/react-test-2/static/css/main.d0c31fcc.css.map",
+    "main.8fb44d0e.css.map": "/react-test-2/static/css/main.8fb44d0e.css.map",
     "main.d430c355.js.map": "/react-test-2/static/js/main.d430c355.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0c31fcc.css",
+    "static/css/main.8fb44d0e.css",
     "static/js/main.d430c355.js"
   ]
 }
